@@ -1,12 +1,55 @@
 <html>
 <head>
     <title>Seminarul de psihanaliză Brașov</title>
+	
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminarul de Psihanaliză Brașov</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        frameset, frame {
+            border: none;
+        }
+    </style>
 </head>
-<frameset rows="10%, *">
-    <frame name="c" src="ph1.html">
-    <frameset cols="13%,*">
-        <frame name="a" src="page2.html">
-        <frame name="b" src="pg3.html">
-    </frameset>
-</frameset>
+
+<div class="container">
+	<frameset rows="9%, *" noresize>
+		<frame name="c" src="ph1.html" noresize marginwidth="10" marginheight="0"/>
+		<frameset rows="5%,*" margin= "0px">
+			<frame name="a" src="page2.html" noresize marginwidth="10" marginheight="0"/>
+			<frame name="b" src="pg3.html" noresize marginwidth="10" marginheight="0"/>
+		</frameset>
+	</frameset>
+</div>
+
 </html>

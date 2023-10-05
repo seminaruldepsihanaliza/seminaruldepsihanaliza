@@ -1,10 +1,18 @@
+<!DOCTYPE html>
 <html>
-<title> Recordings </title>
-<body background="watercolour.jpg">
-<body align=center> <h1 align=center> RECORDINGS </h1> </br>
-<h3>
-here are some recordings from our seminar
 
-</h3> </br> </body>
-
+   <head>
+      <title>HTML Frames</title>
+   </head>
+	
+   <frameset cols = "3%,*">
+      <frame name = "left" src = "recordingleft.html" noresize marginwidth="0" marginheight="0"/>
+      <frame name = "right" src = "recordingright.html" noresize marginwidth="0" marginheight="0"/>
+   
+      <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+      
+   </frameset>
+   
 </html>

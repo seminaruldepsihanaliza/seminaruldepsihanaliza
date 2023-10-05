@@ -1,10 +1,18 @@
+<!DOCTYPE html>
 <html>
-<title> Compositions </title>
-<body background="watercolour.jpg">
-<body align=center> <h1 align=center> COMPOSITIONS </h1> </br>
-<h3>
-what is new in our community
 
-</h3> </br> </body>
-
+   <head>
+      <title>HTML Frames</title>
+   </head>
+	
+   <frameset cols = "3%,*">
+      <frame name = "left" src = "compositionleft.html" noresize marginwidth="0" marginheight="0"/>
+      <frame name = "right" src = "compositionright.html" noresize marginwidth="0" marginheight="0"/>
+   
+      <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+      
+   </frameset>
+   
 </html>

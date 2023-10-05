@@ -1,0 +1,48 @@
+<html>
+
+<body>
+<br>
+<body style="background-image: url('watercolour.jpg'); background-size: cover; background-repeat: no-repeat;">
+    
+<button id="displayIframeButton1">Bibliografie seminar</button>
+<button id="displayIframeButton2">Bibliografie recomandata</button>
+<br>
+
+	
+<div id="iframeDisplay"></div>
+
+<script>
+// Get references to the buttons and iframe display element
+const displayIframeButton1 = document.getElementById("displayIframeButton1");
+const displayIframeButton2 = document.getElementById("displayIframeButton2");
+const iframeDisplay = document.getElementById("iframeDisplay");
+
+// Function to set the iframe height based on its content
+function setIframeHeight(iframe) {
+    const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+    const contentHeight = iframeDocument.documentElement.scrollHeight;
+    iframe.style.height = contentHeight + "px";
+}
+
+// Add a click event listener to the first button
+displayIframeButton1.addEventListener("click", function() {
+    // Set the innerHTML of the iframe display to the first iframe code
+    iframeDisplay.innerHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vTSJUD4uWeDKsyb12wVUIuKZgK_05a5c0t2lMYvOim5jUu3hBJi6HhIPBmqiX4YwQpQrfrl41tkup3A/pub?embedded=true" width="100%" height="100%" style="margin: 0; padding: 0; border: none; overflow: hidden; justify-content: center; align-items: center;"></iframe>`;
+    const iframe = iframeDisplay.querySelector("iframe");
+    iframe.onload = function() {
+        setIframeHeight(iframe);
+    };
+});
+
+// Add a click event listener to the second button
+displayIframeButton2.addEventListener("click", function() {
+    // Set the innerHTML of the iframe display to the second iframe code
+    iframeDisplay.innerHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vR8LWueskiDhA3NBRNQTbml8eJlE9fyS60TgVJa9Qw38wGkvbNpYCQZXMInl7OPZmx_bhs2hmpFGWvL/pub?embedded=true" width="100%" height="100%" style="margin: 0; padding: 0; border: none;"></iframe>`;
+    const iframe = iframeDisplay.querySelector("iframe");
+    iframe.onload = function() {
+        setIframeHeight(iframe);
+    };
+});
+</script>
+</body>
+</html>  
