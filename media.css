@@ -1,0 +1,18 @@
+/* Default styles for all screen sizes */
+body {
+    font-size: 16px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktops) */
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+}
